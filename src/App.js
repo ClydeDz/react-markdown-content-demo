@@ -7,7 +7,8 @@ import {
 } from "react-router-dom";
 import About from './About';
 import Home from './Home';
-import Dashboard from './Dashboard';
+import External from './External';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <div className="menu">
           <Link to="/">Home</Link>  
           <Link to="/about">About</Link> 
-          <Link to="/dashboard">Dashboard</Link>
+          <Link to="/external">External content</Link>
         </div>
         <Switch>
           <Route exact path="/">
@@ -25,10 +26,11 @@ function App() {
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/dashboard">
-            <Dashboard />
+          <Route path="/external">
+            <External />
           </Route>
         </Switch>
+        <Footer />
       </div>
     </Router>
   );
