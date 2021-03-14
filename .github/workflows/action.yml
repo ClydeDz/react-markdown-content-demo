@@ -20,11 +20,9 @@ jobs:
       env:
         CI: true
         
-    - name: Deploy to GitHub Pages
-      if: github.ref == 'refs/heads/master'
-      uses: qoomon/deploy-to-github-pages-action@v1
-      with:
-        GITHUB_PAGES_SOURCE_DIR: build 
-        GITHUB_PAGES_BRANCH: gh-pages 
-        GITHUB_PAGES_REPLACE: false  
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          destination_dir: docs
