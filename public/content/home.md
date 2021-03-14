@@ -1,0 +1,1 @@
+This is a _simple_ __markdown__ content for the home of the **demo** website. This is [React Markdown Component](https://www.npmjs.com/package/react-markdown-content) that reads contents from a Markdown file and renders it as HTML. 

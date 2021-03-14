@@ -2,6 +2,11 @@ body {
   background-color: #282c34;
 }
 
+a {
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
 .menu {
   flex-direction: column;
   align-items: center;
@@ -9,10 +14,14 @@ body {
   width: 350px;
   margin: 10px auto;
 }
+
 .menu a {
-  font-size: calc(10px + 2vmin);
-  color: white;
   margin-right: 50px;
+}
+
+.about-page code {
+  background-color: #3c4046;
+  padding: 1px 5px;
 }
 
 .App {

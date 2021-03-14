@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import { MarkdownContent } from 'react-markdown-content';
 
 function Dashboard() {
     return (
@@ -8,6 +9,9 @@ function Dashboard() {
           <h1>
             Dashboard
           </h1>
+          <MarkdownContent 
+            markdownFilePath="https://raw.githubusercontent.com/ClydeDz/react-markdown-content/main/test/fixtures/link.md"
+            />
         </header>
       </div>
     );
