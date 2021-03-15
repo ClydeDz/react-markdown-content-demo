@@ -37,7 +37,8 @@
     ]
   },
   "devDependencies": {
-    "react-markdown-content": "^0.1.0",
+    "axios": "^0.21.1",
+    "react-markdown-content": "^0.1.1",
     "react-router-dom": "^5.2.0"
   }
 }
